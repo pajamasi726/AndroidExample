@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.exam03_fragment.R.id"/>
+<fullyQualifiedTypeName name="android.app.Fragment"/>
+<fullyQualifiedTypeName name="com.example.exam03_fragment.MyFragment_01"/>
+<fullyQualifiedTypeName name="android.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
+<fullyQualifiedTypeName name="com.example.exam03_fragment.R.layout"/>
+</qualifiedTypeNameHistroy>
