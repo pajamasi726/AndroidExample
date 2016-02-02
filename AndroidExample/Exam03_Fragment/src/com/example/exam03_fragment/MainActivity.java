@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 				else
 				{
 					check = true;
-					frgment = new MyFragment_01();
+					frgment = new MyFragment_02();
 				}
 			break;
 		}

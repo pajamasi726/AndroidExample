@@ -1,0 +1,10 @@
+package com.example.exam04_listview_dataadd;
+
+import android.widget.Button;
+import android.widget.TextView;
+
+public class ItemHolder {
+
+	TextView tv;
+	Button 	btn;
+}

@@ -1,0 +1,99 @@
+package com.example.exam04_listview_dataadd;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class CustomAdapter extends BaseAdapter {
+
+	private ArrayList<ItemDTO> list;
+
+	public CustomAdapter() {
+		list = new ArrayList<ItemDTO>(1);
+	}
+
+	public ArrayList<ItemDTO> getData() {
+		return this.list;
+	}
+
+	public void addData(ItemDTO item) {
+		list.add(item);
+	}
+
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return list.size();
+	}
+
+	@Override
+	public Object getItem(int position) {
+		// TODO Auto-generated method stub
+		return list.get(position);
+	}
+
+	@Override
+	public long getItemId(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		// context 얻어오기
+		final Context context = parent.getContext();
+
+		// 항목 객체
+		ItemHolder item;
+
+		// 리스트뷰 데이터
+		ItemDTO itemDto;
+
+		if (convertView == null) // view 가 생성 되어 있지 않은 경우
+		{
+			// 레이아웃 받아오기
+			LayoutInflater inflater = (LayoutInflater) context
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			convertView = inflater.inflate(R.layout.custom_item, parent, false);
+
+			// 리소스 연결
+			item = new ItemHolder();
+			item.item_tv = (TextView) convertView.findViewById(R.id.item_tv);
+			item.item_btn = (Button) convertView.findViewById(R.id.item_btn);
+
+			// 태그 등록
+			convertView.setTag(item);
+		} else // 생성되어 있는 뷰 일때
+		{
+			item = (ItemHolder) convertView.getTag();
+		}
+
+		item_data = data.get(position);
+
+		item.item_tv.setText(item_data.room_Name);
+		item.item_btn.setText(item_data.btn_Name);
+
+		// 버튼 이벤트
+		item.item_btn.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+
+				Toast.makeText(context, data.get(position).room_Name,
+						Toast.LENGTH_SHORT).show();
+
+			}
+		});
+
+		return convertView;
+	}
+
+}
