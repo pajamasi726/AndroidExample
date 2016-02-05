@@ -1,0 +1,44 @@
+package com.example.exam07_viewpager_01;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class CustomAdapter extends FragmentPagerAdapter{
+
+	int PAGE = 3;
+	FragmentManager fm;
+	
+	public CustomAdapter(FragmentManager fm) {
+		super(fm);
+		this.fm = fm;
+	}
+
+	@Override
+	public Fragment getItem(int position) {
+		CustomFragment frag = null;
+		
+		if(position == 0)
+		{
+			frag = new CustomFragment().create(1);
+			
+		}
+		else if(position == 1)
+		{
+			frag = new CustomFragment().create(2);
+		}
+		else if(position == 2)
+		{
+			frag = new CustomFragment().create(3);
+		}
+		
+		return frag;
+	}
+
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return PAGE;
+	}
+
+}

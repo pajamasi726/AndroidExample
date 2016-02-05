@@ -1,0 +1,48 @@
+package com.example.exam09_notification;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class ResultActivity extends Activity {
+	TextView tv;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.result);
+
+		tv = (TextView) findViewById(R.id.tv);
+
+		CharSequence s = "전달 받은 값은 ";
+
+		int id = 0;
+
+		Bundle extras = getIntent().getExtras();
+
+		if (extras == null) {
+
+			s = "error";
+
+		}
+
+		else {
+
+			id = extras.getInt("notificationId");
+
+		}
+
+		s = s + " " + id;
+
+		t.setText(s);
+
+		NotificationManager nm =
+
+		(NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+		// 노티피케이션 제거
+
+		nm.cancel(id);
+
+	}
+}

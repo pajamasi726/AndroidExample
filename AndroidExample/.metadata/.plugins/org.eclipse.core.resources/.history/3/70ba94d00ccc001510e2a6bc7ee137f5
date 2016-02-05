@@ -1,0 +1,5 @@
+package com.example.exam07_viewpager_01;
+
+public class CustomFragment extends Fragment{
+
+}
