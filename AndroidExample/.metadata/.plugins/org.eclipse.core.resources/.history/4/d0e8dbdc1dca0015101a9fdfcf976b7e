@@ -1,0 +1,16 @@
+package com.example.exam05_viewpager;
+
+import android.os.Bundle;
+
+public class TabInfo {
+	
+	private Class<?> 	cls = null;
+	private Bundle	bun = null;
+	
+	public TabInfo(Class<?> cls , Bundle bun)
+	{
+		this.cls = cls;
+		this.bun = bun;
+	}
+
+}

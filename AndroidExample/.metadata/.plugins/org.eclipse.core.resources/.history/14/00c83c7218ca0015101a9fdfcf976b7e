@@ -1,0 +1,7 @@
+package com.example.exam05_viewpager;
+
+import android.app.Fragment;
+
+public class CustomFragment extends Fragment{
+
+}

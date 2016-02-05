@@ -1,0 +1,11 @@
+package com.example.exam05_viewpager;
+
+import android.os.Bundle;
+
+public class TabInfo {
+	
+	private final Class<?> 	cls;
+	private final Bundle	bun;
+	
+
+}

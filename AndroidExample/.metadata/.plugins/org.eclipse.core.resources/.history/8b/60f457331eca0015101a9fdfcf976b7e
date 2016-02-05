@@ -1,0 +1,33 @@
+package com.example.exam05_viewpager;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+
+public class MainActivity extends FragmentActivity {
+
+	ViewPager viewPager;
+	CustomFragmentPageAdapter adapter;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		// 리소스 로딩
+		resourceInit();
+		
+		// 셋팅
+		
+		final ActionBar bar = getActionBar();
+        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
+	}
+	
+	
+	private void resourceInit()
+	{
+		viewPager = (ViewPager)findViewById(R.id.pager);
+	}
+}
