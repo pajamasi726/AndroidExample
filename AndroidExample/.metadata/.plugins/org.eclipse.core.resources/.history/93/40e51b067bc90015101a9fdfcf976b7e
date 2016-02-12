@@ -1,7 +1,0 @@
-package com.example.exam04_listview_dataadd;
-
-import android.widget.BaseAdapter;
-
-public class CustomAdapter extends BaseAdapter{
-
-}

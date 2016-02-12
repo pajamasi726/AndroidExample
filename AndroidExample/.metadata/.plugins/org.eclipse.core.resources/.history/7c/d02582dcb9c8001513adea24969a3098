@@ -1,7 +1,0 @@
-package com.example.exam03_fragment;
-
-import android.app.Fragment;
-
-public class MyFragment_01 extends Fragment{
-
-}

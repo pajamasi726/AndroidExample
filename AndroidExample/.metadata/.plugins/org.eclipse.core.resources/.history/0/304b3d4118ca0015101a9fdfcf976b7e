@@ -1,8 +1,0 @@
-package com.example.exam05_viewpager;
-
-import android.annotation.SuppressLint;
-
-@SuppressLint("NewApi")
-public class CustomFragment extends Fragment{
-
-}

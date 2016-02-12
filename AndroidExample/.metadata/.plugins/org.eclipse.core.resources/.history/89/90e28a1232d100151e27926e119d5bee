@@ -1,0 +1,24 @@
+package com.example.exam10_nonactivityfragmentaccess;
+
+import android.app.FragmentManager;
+
+public class publicClass {
+
+	FragmentManager fragmentManager;
+	
+	public publicClass(FragmentManager fragmentManager) {
+		this.fragmentManager = fragmentManager;
+	}
+
+	public void setText(String string) {
+		fragmentManager.findFragmentById(R.id.fragment_place);
+		
+		View _v = frag.getView();
+		
+		Button btn3 = (Button)_v.findViewById(R.id.button1);
+		
+		btn3.setText("!!!");
+		
+	}
+
+}
