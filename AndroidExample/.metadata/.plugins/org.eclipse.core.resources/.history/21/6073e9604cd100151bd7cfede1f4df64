@@ -1,0 +1,10 @@
+package DataBean;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+import com.example.exam11_activitytoactivityarraylist.Item;
+
+public class CustomSerialList extends ArrayList<Item> implements Serializable{
+
+}

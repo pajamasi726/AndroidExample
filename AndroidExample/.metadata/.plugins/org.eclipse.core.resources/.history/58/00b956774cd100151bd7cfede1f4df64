@@ -1,0 +1,8 @@
+package DataBean;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class CustomSerialList extends ArrayList<Item> implements Serializable{
+
+}

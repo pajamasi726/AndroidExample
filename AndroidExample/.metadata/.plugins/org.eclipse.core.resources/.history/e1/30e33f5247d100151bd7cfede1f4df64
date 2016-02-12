@@ -1,0 +1,28 @@
+package com.example.exam11_activitytoactivityarraylist;
+
+
+import com.example.exam01_listview.MyAdapter;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Adapter;
+import android.widget.ListView;
+
+public class SecondActivity extends Activity {
+
+	ListView lv;
+	Adapter adapter;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		ArrayList<Item> myList = (ArrayList<Item>) getIntent().getSerializableExtra("item");
+		
+		lv = (ListView)findViewById(R.id.lv);
+		
+		adapter = new Adapter(this, android.R.layout.simple_expandable_list_item_1, myList);
+	}
+
+}

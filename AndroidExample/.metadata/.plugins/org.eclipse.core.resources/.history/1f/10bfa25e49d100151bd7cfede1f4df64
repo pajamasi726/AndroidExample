@@ -1,0 +1,14 @@
+package com.example.exam11_activitytoactivityarraylist;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class ItemBean implements Serializable{
+
+	private ArrayList<Item> list = new ArrayList<Item>();
+	
+	public ArrayList<Item> get_List()
+	{
+		return this.list;
+	}
+}

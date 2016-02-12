@@ -1,0 +1,41 @@
+package com.example.arraylisttransferactivity;
+
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.provider.CalendarContract.Instances;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class SecondActivity extends Activity {
+
+	ListView lv;
+	ArrayAdapter<String> adapter;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.second);
+		
+		
+		ArrayList<Item> data = (ArrayList<Item>)getIntent().getSerializableExtra("item");
+
+		
+		ArrayList<String> list = new ArrayList<String>(1);
+		
+		for(int i = 0 ; i < data.size(); i ++)
+		{
+			list.add(data.get(i).name);
+		}
+		
+		
+		lv = (ListView)findViewById(R.id.lv);
+		adapter = new ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, list);
+		
+		lv.setAdapter(adapter);
+	}
+
+}

@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+/*
+ * 액티비티가 아닌곳 또는 다른곳에서 프래그먼트에 접근해서 바꾸는 예제
+ */
 public class MainActivity extends Activity {
 
 	@SuppressLint("NewApi")
