@@ -1,4 +1,0 @@
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Exam03_Fragment,org.eclipse.launchbar.core.descriptorType.default\:Exam04_ListView_DataAdd,org.eclipse.launchbar.core.descriptorType.default\:Exam05_ViewPager,org.eclipse.launchbar.core.descriptorType.default\:Exam06_SlidingDrawer,org.eclipse.launchbar.core.descriptorType.default\:Exam07_ViewPager_01,org.eclipse.launchbar.core.descriptorType.default\:Exam08_ActionBarButton,org.eclipse.launchbar.core.descriptorType.default\:Exam09_Notification
-eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:Exam03_Fragment/activeLaunchMode=run
-org.eclipse.launchbar.core.descriptorType.default\:Exam03_Fragment/activeLaunchTarget=org.eclipse.remote.LocalServices\:Local
