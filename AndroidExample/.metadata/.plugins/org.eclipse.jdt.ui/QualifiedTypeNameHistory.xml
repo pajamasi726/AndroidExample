@@ -18,4 +18,16 @@
 <fullyQualifiedTypeName name="com.example.exam05_viewpager.CustomFragment_Page01"/>
 <fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
 <fullyQualifiedTypeName name="com.example.exam05_viewpager.CustomFragmentPageAdapter"/>
+<fullyQualifiedTypeName name="android.app.Service"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.example.exam12_service.R.id"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="com.example.exam12_service.CustomService"/>
+<fullyQualifiedTypeName name="com.example.exam12_service.CustomThread"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="java.text.BreakIterator"/>
+<fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
+<fullyQualifiedTypeName name="android.sax.StartElementListener"/>
+<fullyQualifiedTypeName name="com.example.exan14_broadcastreceiver.MainActivity"/>
 </qualifiedTypeNameHistroy>
