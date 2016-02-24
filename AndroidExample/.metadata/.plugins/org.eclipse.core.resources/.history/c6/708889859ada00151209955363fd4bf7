@@ -1,0 +1,28 @@
+package com.example.exam16_sqlite;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class CustomDBManager extends SQLiteOpenHelper{
+
+	// 생성자  DB이름과 버전을 받는다
+	public CustomDBManager(Context context, String DBname, CursorFactory factory, int DBversion) {
+		super(context, DBname, factory, DBversion);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		
+	}
+
+	
+	// DB버전이 다를때 호출된다. 버전을 올려주고 싶을때 새로운 작업
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+	
+
+}

@@ -1,0 +1,5 @@
+package com.example.exam16_sqlite;
+
+public class CustomDBManager {
+
+}

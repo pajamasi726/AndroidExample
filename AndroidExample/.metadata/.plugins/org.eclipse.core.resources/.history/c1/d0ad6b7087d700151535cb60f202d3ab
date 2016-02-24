@@ -1,0 +1,5 @@
+package com.example.study_broadcastreceiver;
+
+public class CustomReceiver {
+
+}

@@ -1,5 +1,0 @@
-package com.example.exam12_service;
-
-public class CustomThread extends Thread{
-
-}

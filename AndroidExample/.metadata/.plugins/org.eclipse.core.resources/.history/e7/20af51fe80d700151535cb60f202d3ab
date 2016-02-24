@@ -1,0 +1,7 @@
+package com.example.study_viewpager;
+
+import android.support.v4.app.Fragment;
+
+public class FragmentPage extends Fragment{
+
+}
