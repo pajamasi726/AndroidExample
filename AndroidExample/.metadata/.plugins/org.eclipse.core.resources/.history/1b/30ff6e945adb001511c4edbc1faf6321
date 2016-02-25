@@ -1,0 +1,72 @@
+package com.example.exam17_sqladapter;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class CustomDBManager extends SQLiteOpenHelper{
+	SQLiteDatabase db;
+	public static final String  DataBaseName = "book.db";
+	public static final int 	DataBaseVersion = 1;
+	
+	
+	public CustomDBManager(Context context, String name, CursorFactory factory,
+			int version) {
+		super(context, name, factory, version);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		db.execSQL(DB_Mark.CREATE);
+		
+		insert("유관순");
+		insert("이순신");
+		insert("강감찬");
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		db.execSQL("DROP TABLE IF EXISTS " + DB_Mark.BOOKTABLE);
+        onCreate(db);
+		
+	}
+	
+	public void insert(String name)
+	{
+		ContentValues values = new ContentValues();
+		values.put(DB_Mark.DB_COL_NAME, name);
+		
+		
+		db.insert(DB_Mark.DB_TABLE, null, values);
+		
+	}
+	
+	public Cursor allData()
+	{
+		SQLiteDatabase db= getWritableDatabase();
+		System.out.println("alldata");
+		String str = "";
+		Cursor c = db.query(DB_Mark.DB_TABLE, null, null, null, null, null, null);
+		while(c.moveToNext())
+		{
+			str += "Id : "+c.getInt(0);
+			str += "\t name : "+c.getString(1);
+			str += "\n";
+		}
+		db.close();
+		return c; 
+	}
+	
+	public void open()
+	{
+		db= getWritableDatabase();
+	}
+	
+	public void close()
+	{
+		db.close();
+	}
+}

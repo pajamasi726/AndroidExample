@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.example.exam03_fragment.R.id"/>
 <fullyQualifiedTypeName name="com.example.exam03_fragment.MyFragment_01"/>
 <fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
 <fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
@@ -23,7 +22,6 @@
 <fullyQualifiedTypeName name="java.text.BreakIterator"/>
 <fullyQualifiedTypeName name="android.sax.StartElementListener"/>
 <fullyQualifiedTypeName name="com.example.exan14_broadcastreceiver.MainActivity"/>
-<fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.app.Fragment"/>
 <fullyQualifiedTypeName name="com.example.study_fragment.FirstPage"/>
 <fullyQualifiedTypeName name="com.example.study_fragment.SecondPage"/>
@@ -37,4 +35,29 @@
 <fullyQualifiedTypeName name="com.example.study_viewpager.CustomPagerAdapter"/>
 <fullyQualifiedTypeName name="android.support.v4.view.ViewPager.OnPageChangeListener"/>
 <fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="com.example.exam16_sqlite.R.id"/>
+<fullyQualifiedTypeName name="com.example.exam16_sqlite.CustomDBManager"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteStatement"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="android.widget.CursorAdapter"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="com.example.exam17_sqladapter.R.layout"/>
+<fullyQualifiedTypeName name="com.example.exam17_sqladapter.CustomCursorAdapter"/>
+<fullyQualifiedTypeName name="com.example.exam17_sqladapter.CustomDBManager"/>
+<fullyQualifiedTypeName name="com.example.exam17_sqladapter.Bookmark"/>
+<fullyQualifiedTypeName name="com.example.exam17_sqladapter.DB_Mark"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteCursor"/>
+<fullyQualifiedTypeName name="android.content.ContentProvider"/>
+<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.R.id"/>
+<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.CustomCursorAdapter"/>
+<fullyQualifiedTypeName name="android.app.LoaderManager.LoaderCallbacks"/>
+<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.CustomDBManager"/>
+<fullyQualifiedTypeName name="android.support.v4.content.CursorLoader"/>
+<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.CustomProvider"/>
+<fullyQualifiedTypeName name="android.content.CursorLoader"/>
 </qualifiedTypeNameHistroy>
