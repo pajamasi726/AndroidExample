@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.example.exam03_fragment.MyFragment_01"/>
-<fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
 <fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
 <fullyQualifiedTypeName name="com.example.exam04_listview_dataadd.CustomAdapter"/>
 <fullyQualifiedTypeName name="com.example.exam04_listview_dataadd.R.id"/>
@@ -43,7 +41,6 @@
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="android.widget.CursorAdapter"/>
 <fullyQualifiedTypeName name="android.database.sqlite.SQLiteOpenHelper"/>
-<fullyQualifiedTypeName name="android.content.ContentValues"/>
 <fullyQualifiedTypeName name="android.view.LayoutInflater"/>
 <fullyQualifiedTypeName name="com.example.exam17_sqladapter.R.layout"/>
 <fullyQualifiedTypeName name="com.example.exam17_sqladapter.CustomCursorAdapter"/>
@@ -58,6 +55,9 @@
 <fullyQualifiedTypeName name="android.app.LoaderManager.LoaderCallbacks"/>
 <fullyQualifiedTypeName name="com.example.exam_18_sqlloader.CustomDBManager"/>
 <fullyQualifiedTypeName name="android.support.v4.content.CursorLoader"/>
-<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.CustomProvider"/>
 <fullyQualifiedTypeName name="android.content.CursorLoader"/>
+<fullyQualifiedTypeName name="android.app.LoaderManager"/>
+<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.CustomProvider"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="com.example.exam_18_sqlloader.DB_Mark"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;uriMatcher&apos; in &apos;com.example.exam_18_sqlloader.CustomProvider&apos; to &apos;uriMatcher_AllUser&apos;&#x0D;&#x0A;- Original project: &apos;Exam18_SQLLoader&apos;&#x0D;&#x0A;- Original element: &apos;com.example.exam_18_sqlloader.CustomProvider.uriMatcher&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.exam_18_sqlloader.CustomProvider.uriMatcher_AllUser&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;uriMatcher&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.example.exam_18_sqlloader{CustomProvider.java[CustomProvider^uriMatcher" name="uriMatcher_AllUser" references="true" setter="false" stamp="1456444423477" textual="false" version="1.0"/>
+</session>

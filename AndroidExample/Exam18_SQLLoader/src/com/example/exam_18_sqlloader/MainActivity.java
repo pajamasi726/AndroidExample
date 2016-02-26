@@ -2,7 +2,9 @@ package com.example.exam_18_sqlloader;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.LoaderManager;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.content.ContentValues;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
@@ -29,17 +31,38 @@ public class MainActivity extends Activity implements LoaderCallbacks<Cursor>{
 		
 		adapter = new CustomCursorAdapter(this, null);
 		lv.setAdapter(adapter);
+		
+		getLoaderManager().initLoader(0, null, this);
+		
+		
 	}
 	
 	public void onClick(View v)
 	{
+		ContentValues values = new ContentValues();
+		values.put(DB_Mark.DB_COL_NAME, edt.getText().toString());
+		
+		getContentResolver().insert(CustomProvider.INSERT_USER_URI, values);
+		
+		getLoaderManager().restartLoader(0, null, this);
 		
 	}
 
 	@Override
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
 		System.out.println("creater id : "+id);
-		Uri uri = CustomProvider.AllPERSON_URI;
+		Uri uri = null;
+		switch(id)
+		{
+			case CustomProvider.ALL_USER_MATCH :
+				uri = CustomProvider.AllPERSON_URI;
+			break;
+			
+			case CustomProvider.INSERT_USER_MATCH :
+				uri = CustomProvider.INSERT_USER_URI;
+			break;
+		
+		}
 		return new CursorLoader(this, uri, null, null, null, null);
 	}
 
@@ -47,11 +70,14 @@ public class MainActivity extends Activity implements LoaderCallbacks<Cursor>{
 	@Override
 	public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
 		adapter.swapCursor(data);
+		System.out.println("Finished");
 	}
 
 	@Override
 	public void onLoaderReset(Loader<Cursor> loader) {
-		// TODO Auto-generated method stub
+		adapter.swapCursor(null);
+		System.out.println("LoaderReset");
+		
 		
 	}
 }

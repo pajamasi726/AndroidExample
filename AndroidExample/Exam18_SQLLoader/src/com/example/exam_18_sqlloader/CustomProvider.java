@@ -13,17 +13,26 @@ public class CustomProvider extends ContentProvider{
 	
 	// 전체 사용자 검색 요청 
 	public static final String ALL_USER = "AllPerson";
+	public static final String INSERT_USER = "InsertUser";
 	
 	public static final Uri AllPERSON_URI = Uri.parse("content://"+PROVIDER_NAME+"/"+ALL_USER); // 마지막 부분은 검색 요청 부분 
+	public static final Uri INSERT_USER_URI = Uri.parse("content://"+PROVIDER_NAME); // 마지막 부분은 검색 요청 부분 
 	
+	public static final int ALL_USER_MATCH 		= 0;
+	public static final int INSERT_USER_MATCH 	= 1;
 	
-	private static final int ALL_USER_MATCH = 1;
-	
-	private static final UriMatcher uriMatcher ;
+	private static final UriMatcher uriMatcher_AllUser ;
 	
     static {
-        uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        uriMatcher.addURI(PROVIDER_NAME, ALL_USER, ALL_USER_MATCH); // 구별 ,패스 ,코드
+        uriMatcher_AllUser = new UriMatcher(UriMatcher.NO_MATCH);
+        uriMatcher_AllUser.addURI(PROVIDER_NAME, ALL_USER, ALL_USER_MATCH); // 구별 ,패스 ,코드
+    }
+    
+    private static final UriMatcher uriMatcher_InsertUser ;
+	
+    static {
+    	uriMatcher_InsertUser = new UriMatcher(UriMatcher.NO_MATCH);
+    	uriMatcher_InsertUser.addURI(PROVIDER_NAME, INSERT_USER, ALL_USER_MATCH); // 구별 ,패스 ,코드
     }
     
     CustomDBManager dbmanager;
@@ -41,7 +50,7 @@ public class CustomProvider extends ContentProvider{
 	public Cursor query(Uri uri, String[] projection, String selection,
 			String[] selectionArgs, String sortOrder) {
 		
-		if(uriMatcher.match(uri)==ALL_USER_MATCH){
+		if(uriMatcher_AllUser.match(uri)==ALL_USER_MATCH){
             return dbmanager.allData();
         }else{
             return null;
@@ -58,7 +67,9 @@ public class CustomProvider extends ContentProvider{
 	// 데이터 삽입 
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
-		// TODO Auto-generated method stub
+		System.out.println("ContentProvider Insert");
+		
+		dbmanager.insert(values);
 		return null;
 	}
 

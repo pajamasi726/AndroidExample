@@ -15,6 +15,7 @@ public class CustomDBManager extends SQLiteOpenHelper{
 	public CustomDBManager(Context context, String name, CursorFactory factory,
 			int version) {
 		super(context, name, factory, version);
+		this.dbOpen();
 	}
 
 	@Override
@@ -28,12 +29,11 @@ public class CustomDBManager extends SQLiteOpenHelper{
         onCreate(db);
 	}
 	
-	public void insert(String name)
+	public void insert(ContentValues values)
 	{
-		ContentValues values = new ContentValues();
-		
-		values.put(DB_Mark.DB_COL_NAME, name);
 		db.insert(DB_Mark.DB_TABLE, null, values);
+		
+		System.out.println("DB Insert Success");
 	}
 	
 	public Cursor allData()
@@ -45,7 +45,7 @@ public class CustomDBManager extends SQLiteOpenHelper{
 	
 	public void dbOpen()
 	{
-		db = this.getReadableDatabase();
+		db = this.getWritableDatabase();
 	}
 	
 	public void dbClose()
