@@ -1,0 +1,98 @@
+package com.example.exam17_sqlitelistview;
+
+import com.example.exam16_sqlite.SQLiteStatement;
+import com.example.exam16_sqlite.StringBuffer;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class CustomDBManager extends SQLiteOpenHelper{
+	
+	public final static int DB_VERSION = 1;
+	public final static String DB_NAME = "person.db";
+	public final static String DB_TABLE = "Person";
+	public final static String DB_COL_NAME = "name";
+	
+	private SQLiteDatabase db;
+	
+
+	public CustomDBManager(Context context, String name, CursorFactory factory, int version) {
+		super(context, name, factory, version);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) 
+	{
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("Create Table "+DB_TABLE+" (_id INTEGER PRIMARY KEY AUTOINCREMENT, ");
+		sb.append(DB_COL_NAME+" TEXT);");
+		db.execSQL(sb.toString());
+		
+		insert("이순신1");
+		insert("이순신2");
+		insert("이순신3");
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+	
+	public Cursor allData()
+	{
+		db = null;
+		Cursor c = null;
+		db = getReadableDatabase();
+		
+		//c = db.query(DB_TABLE, null, null, null, null, null, null);
+		
+		//db.close();
+		//db = null;
+		return c;
+	}
+	
+	public void insert(String name)
+	{
+//		db = null;
+//		db = getWritableDatabase();
+//		
+//		ContentValues values = new ContentValues();
+//		values.put(DB_COL_NAME, name);
+//		
+//		
+//		db.insert(DB_TABLE, null, values);
+//		db.close();
+//		db = null;
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("Insert into "+DB_TABLE+" ("+DB_COL_NAME+") VALUES (?)");
+		
+		SQLiteDatabase db = getWritableDatabase();
+		SQLiteStatement statement = db.compileStatement(sb.toString());
+		
+		statement.bindString(1, name);
+		statement.bindLong(2, phonenum);
+		
+		long result = statement.executeInsert();
+		System.out.println("DB 입력 결과 : "+result);
+		
+		statement.close();
+		db.close();
+	}
+	
+	public void DbOpen()
+	{
+		
+	}
+	
+	public void DbClose()
+	{
+		
+	}
+
+}

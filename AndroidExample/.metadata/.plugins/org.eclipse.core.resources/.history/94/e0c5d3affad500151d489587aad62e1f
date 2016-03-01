@@ -1,0 +1,9 @@
+package com.example.exan14_broadcastreceiver;
+
+import java.text.BreakIterator;
+
+import android.content.BroadcastReceiver;
+
+public class CustomReceiver extends BroadcastReceiver{
+
+}

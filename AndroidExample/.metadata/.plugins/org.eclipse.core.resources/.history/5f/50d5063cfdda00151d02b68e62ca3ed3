@@ -1,0 +1,53 @@
+package com.example.exam17_sqlitelistview;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class CustomDBManager extends SQLiteOpenHelper{
+	
+	public final static int DB_VERSION = 1;
+	public final static String DB_NAME = "person.db";
+	public final static String DB_TABLE = "Person";
+	public final static String DB_COL_NAME = "name";
+	
+
+	public CustomDBManager(Context context, String name, CursorFactory factory, int version) {
+		super(context, name, factory, version);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+	
+	public Cursor allData()
+	{
+		Cursor c = null;
+		
+		return c;
+	}
+	
+	public void insert(String name)
+	{
+		
+	}
+	
+	public void DbOpen()
+	{
+		
+	}
+	
+	public void DbClose()
+	{
+		
+	}
+
+}

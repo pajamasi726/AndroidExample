@@ -1,0 +1,14 @@
+package com.example.exam17_sqlitelistview;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.widget.CursorAdapter;
+
+public class CustomCursorAdapter extends CursorAdapter{
+
+	public CustomCursorAdapter(Context context, Cursor c) {
+		super(context, c);
+		// TODO Auto-generated constructor stub
+	}
+
+}
