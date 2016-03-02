@@ -1,0 +1,27 @@
+package com.pajamasi.unitalk;
+
+import java.util.Vector;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class MainPagerAdapter extends FragmentPagerAdapter{
+	
+
+	public MainPagerAdapter(FragmentManager fm, Vector<Fragment> fragments) {
+		super(fm);
+	}
+
+	@Override
+	public Fragment getItem(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,10 @@
+package com.pajamasi.unitalk.fragment;
+
+/**
+ * 전체 친구 리스트를 나타내는 페이지
+ * @author Administrator
+ *
+ */
+public class FirstTab_Fragment {
+
+}

@@ -1,0 +1,7 @@
+package com.pajamasi.unitalk;
+
+import android.view.View;
+
+public class TabView extends View{
+
+}

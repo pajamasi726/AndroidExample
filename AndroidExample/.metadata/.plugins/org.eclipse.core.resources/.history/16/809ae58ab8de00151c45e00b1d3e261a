@@ -1,0 +1,13 @@
+package com.pajamasi.unitalk;
+
+import android.content.Context;
+import android.view.View;
+
+public class TabView extends View{
+
+	public TabView(Context context) {
+		super(context);
+	
+	}
+
+}

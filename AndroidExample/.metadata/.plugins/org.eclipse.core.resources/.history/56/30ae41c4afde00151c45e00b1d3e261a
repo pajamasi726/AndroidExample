@@ -1,0 +1,13 @@
+package com.pajamasi.unitalk.fragment;
+
+import android.support.v4.app.Fragment;
+
+/**
+ * 전체 친구 리스트를 나타내는 페이지
+ * @author pajamasi
+ */
+public class FirstTab_Fragment extends Fragment{
+
+	
+	
+}

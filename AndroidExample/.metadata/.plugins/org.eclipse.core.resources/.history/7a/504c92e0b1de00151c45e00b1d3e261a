@@ -1,0 +1,32 @@
+package com.pajamasi.unitalk;
+
+import java.util.Vector;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
+
+public class MainActivity extends Activity {
+	
+
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		init();
+	}
+	
+	/** 리소스 로딩*/
+	private void init()
+	{
+		
+	}
+	
+	private ViewPager 		 m_Pager;		// 프래그먼트 페이저
+	private FragmentManager  m_FragManager; // 프래그먼트 매니저
+	private Vector<Fragment> m_Fragments;	// 프래그먼트 배열
+}

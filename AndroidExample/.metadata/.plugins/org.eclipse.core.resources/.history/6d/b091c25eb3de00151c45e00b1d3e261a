@@ -1,0 +1,9 @@
+package com.pajamasi.unitalk;
+
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class MainPagerAdapter extends FragmentPagerAdapter{
+	public MainPagerAdapter() {
+		// TODO Auto-generated constructor stub
+	}
+}

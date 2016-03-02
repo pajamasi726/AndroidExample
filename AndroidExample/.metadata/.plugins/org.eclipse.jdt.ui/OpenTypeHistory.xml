@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Exam12_Service/src&lt;com.example.exam12_service{CustomService.java[CustomService" modifiers="1" timestamp="1456320330219"/>
-<typeInfo handle="=Exam14_BroadCastReceiver/src&lt;com.example.exan14_broadcastreceiver{CustomReceiver.java[CustomReceiver" modifiers="1" timestamp="1456320330304"/>
-<typeInfo handle="=Study_BroadCastReceiver/src&lt;com.example.study_broadcastreceiver{CustomReceiver.java[CustomReceiver" modifiers="1" timestamp="1456320330518"/>
-<typeInfo handle="=Exam18_SQLLoader/src&lt;com.example.exam_18_sqlloader{CustomProvider.java[CustomProvider" modifiers="1" timestamp="1456568875448"/>
+<typeInfo handle="=Exam12_Service/src&lt;com.example.exam12_service{CustomService.java[CustomService" modifiers="1" timestamp="1455759203408"/>
+<typeInfo handle="=Exam14_BroadCastReceiver/src&lt;com.example.exan14_broadcastreceiver{CustomReceiver.java[CustomReceiver" modifiers="1" timestamp="1455775836931"/>
+<typeInfo handle="=Study_BroadCastReceiver/src&lt;com.example.study_broadcastreceiver{CustomReceiver.java[CustomReceiver" modifiers="1" timestamp="1455942499973"/>
+<typeInfo handle="=Exam18_SQLLoader/src&lt;com.example.exam_18_sqlloader{CustomProvider.java[CustomProvider" modifiers="1" timestamp="1456447613663"/>
 </typeInfoHistroy>

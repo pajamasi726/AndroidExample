@@ -1,7 +1,0 @@
-package com.example.exam17_sqladapter;
-
-import android.widget.CursorAdapter;
-
-public class CustomCursorAdapter extends CursorAdapter{
-
-}
