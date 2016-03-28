@@ -1,8 +1,0 @@
-package com.example.exam17_sqladapter;
-
-public final class Bookmark {
-	public static final String BOOK = "book";
-	public static final String BOOKTABLE = "BOOKTABLE";
-	
-	public static final String CREATE = "create table "+BOOKTABLE+" (_id INTEGER PRIMARY KEY AUTOINCREMENT, "+BOOK+" TEXT);";
-}

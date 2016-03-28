@@ -1,0 +1,15 @@
+package com.example.eam21_topactivityinfo.Activity;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+import com.example.eam21_topactivityinfo.R;
+
+public class ThirdActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.thirdactivity);
+	}
+}
